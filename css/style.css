@@ -3,6 +3,7 @@
 @import "./utilities/colors.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* utilities */
 @import "./utilities/components.css";
@@ -17,4 +18,4 @@
 @import "./bicycle/bicycle-list.css";
 
 /* insurance */
-@import "./insurance/insurance.css";
+@import "./insurance/insurance.css"
