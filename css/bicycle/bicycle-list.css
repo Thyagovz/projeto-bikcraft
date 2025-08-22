@@ -17,6 +17,10 @@
   overflow-x: scroll;
 }
 
+#bicycle .bicycle-list ul {
+  padding: 0px 0px 20px 0px;
+}
+
 .bicycle-list li {
   flex: 1;
   min-width: 280px;
