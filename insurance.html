@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seguro | Bikcraft</title>
     <meta name="description" content="Seguro." />
-    <link rel="preload" href="./css/style.css" as="style" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js" defer></script>
   </head>
   <body id="insurance">
@@ -40,7 +44,7 @@
         </div>
       </div>
       <div class="insurance container">
-        <div class="insurance-item">
+        <div class="insurance-item fadeInLeft" data-anime="200">
           <h3 class="font-1-xl color-6">PRATA</h3>
           <span class="font-1-xl color-0"
             >R$ 199 <span class="font-1-xs color-6">mensal</span></span
@@ -57,7 +61,7 @@
             >Inscreva-se</a
           >
         </div>
-        <div class="insurance-item">
+        <div class="insurance-item fadeInRight" data-anime="400">
           <h3 class="font-1-xl color-p1">OURO</h3>
           <span class="font-1-xl color-0"
             >R$ 299 <span class="font-1-xs color-6">mensal</span></span

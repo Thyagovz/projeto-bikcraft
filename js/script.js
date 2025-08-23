@@ -38,3 +38,24 @@ function eventQuestion(question) {
 }
 
 question.forEach(eventQuestion);
+
+const gallery = document.querySelectorAll(".bicycle-img img");
+const galleryContainer = document.querySelector(".bicycle-img");
+
+function switchImage(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    galleryContainer.prepend(img);
+  }
+}
+
+function eventsGallery(img) {
+  img.addEventListener("click", switchImage);
+}
+
+gallery.forEach(eventsGallery);
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
