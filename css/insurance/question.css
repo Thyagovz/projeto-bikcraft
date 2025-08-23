@@ -16,13 +16,19 @@
   background-color: var(--color-1);
 }
 
-.question dt {
+.question button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
-.question dt::before {
+
+.question button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -30,7 +36,7 @@
   background-color: var(--color-p1);
 }
 
-.question dt::after {
+.question button::after {
   content: "";
   display: inline-block;
   width: 14px;
@@ -39,8 +45,17 @@
   transition: 0.3s;
 }
 
-.question dt:hover::after {
+.question button:hover::after,
+.question button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+
+.question dd {
+  display: none;
+}
+
+.question dd.active {
+  display: block;
 }
 
 .question dd {
