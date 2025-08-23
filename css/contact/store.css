@@ -33,7 +33,7 @@
   grid-column: 1/-1;
 }
 
-.store-detail {
+.store-data {
   display: grid;
   gap: 8px;
   border-left: 2px solid var(--color-2);
